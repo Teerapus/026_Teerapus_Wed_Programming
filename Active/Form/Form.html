@@ -9,8 +9,8 @@
     
     <ul>
         <h2>สมาชิก</h2>
-    <li>นายธีรภัทร ดำสุวรรณ รหัสนักศึกษา 6540011026</li>
-    <li></li>
+    <li>นาย ธีรภัทร ดำสุวรรณ รหัสนักศึกษา 6540011026</li>
+    <li>นางสาว ธมลวรรณ ภูเขาทอง รหัสนักศึกษา 6540011023</li>
     <h2>ฟอร์มลงทะเบียนศิษย์เก่า</h2>
     <form action="process_form.php" method="post" enctype="multipart/form-data">
         <label for="name">ขื่อ - นามสกุล:</label> <input type="text" name="name" required>  <label for="student_id">รหัสนักศึกษา:</label>
@@ -40,13 +40,15 @@
             <option value="IS">IS</option>
         </select><br>
 
+        <label for="workplace">สถานที่ทำงาน:</label>
+        <input type="text" name="workplace" required><br>
+
         <label for="current_occupation">อาชีพปัจจุบัน:</label>
         <br>
         <textarea name="address" required></textarea><br>
         <br>
 
-        <label for="workplace">สถานที่ทำงาน:</label>
-        <input type="text" name="workplace" required><br>
+        
 
         <label for="job_type">ประเภทงาน:</label>
         <select name="job_type" required>
