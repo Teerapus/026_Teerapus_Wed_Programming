@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Salsa', cursive;
+            font-size: 15px;
+        }
+        .column1,.column2,.column3{
+            float: left;
+            width: 300px;
+            border: 3px solid black;
+            padding: 10px;
+            margin: 5px;
+            background-color: salmon;
+        }
+        .column2{
+            background-color: orange;
+        }
+        .column3{
+            background-color: skyblue;
+        }
+    </style>
+    <style>
+        .c1, .c2, .c3{
+            width: 300px;
+            border: 5px double;
+            padding: 15px;
+            margin: 5px;
+            float: left; /*float ทำให้กล่องเรียงกันแนวนอน โดยสามารถกำหนดได้ว่าจะให้ติดซ้ายหรือขวา เรียงลำดับจากกล่องที่มาก่อน จะมีปัญหาเมื่อขนาดของกล่องไม่เท่ากัน*/
+            /*clear: both; เคลียร์ทั้งซ้ายและขวา มีแค่ตัวกล่อแค่กล่องเดียวในบรรทัดนั้น*/
+            /*clear: left; เคลียร์ทางฝั่งซ้ายไม่ให้มีใครมาก่อน ตัวเองมาก่อนเท่านั้น*/
+            /*clear: right; เคลียร์ทางด้านขวา ไม่ให้มีใครมาต่อท้าย*/
+        }
+        .c1{
+            background-color: #dda0dd;
+            font-family: 'Lemon', serif;
+            clear: left;
+
+        }
+        .c2{
+            background-color: #6b8f23;
+            font-family: 'Permanent Marker', cursive;
+        }
+        .c3{
+            background-color: #696969;
+            font-family: 'Concert One', sans-serif;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="column1">
+        <h3>Topoic 1</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit iusto recusandae eaque minus, omnis est molestiae rem distinctio. Similique repellat nulla, neque dolore est cum soluta optio ea perferendis. Delectus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde tempora nesciunt odit, vero esse quas rerum laborum facere commodi maiores eaque libero architecto, nisi temporibus voluptas labore voluptate dolore!
+    </div>
+
+    <div class="column2">
+        <h3>Topoic 2</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit iusto recusandae eaque minus, omnis est molestiae rem distinctio. Similique repellat nulla, neque dolore est cum soluta optio ea perferendis. Delectus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde tempora nesciunt odit, vero esse quas rerum laborum facere commodi maiores eaque libero architecto, nisi temporibus voluptas labore voluptate dolore!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa non voluptatem magni. Eius porro tenetur veniam ipsum delectus, dicta sit ipsam mollitia qui illo itaque, tempora minima quasi pariatur?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum aut incidunt perferendis rerum provident architecto iure, inventore est fugiat officia earum quos minima laborum quas dolorum aliquid eaque. In, amet.
+    </div>
+
+    <div class="column3">
+        <h3>Topoic 3</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit iusto recusandae eaque minus, omnis est molestiae rem distinctio. Similique repellat nulla, neque dolore est cum soluta optio ea perferendis. Delectus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde tempora nesciunt odit, vero esse quas rerum laborum facere commodi maiores eaque libero architecto, nisi temporibus voluptas labore voluptate dolore!
+    </div>
+
+    <div class="column1">
+        <h3>Topoic 4</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit iusto recusandae eaque minus, omnis est molestiae rem distinctio. Similique repellat nulla, neque dolore est cum soluta optio ea perferendis. Delectus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde tempora nesciunt odit, vero esse quas rerum laborum facere commodi maiores eaque libero architecto, nisi temporibus voluptas labore voluptate dolore!
+    </div>
+
+    <div class="column2">
+        <h3>Topoic 5</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit iusto recusandae eaque minus, omnis est molestiae rem distinctio. Similique repellat nulla, neque dolore est cum soluta optio ea perferendis. Delectus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde tempora nesciunt odit, vero esse quas rerum laborum facere commodi maiores eaque libero architecto, nisi temporibus voluptas labore voluptate dolore!
+    </div>
+
+    <div class="column3">
+        <h3>Topoic 6</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit iusto recusandae eaque minus, omnis est molestiae rem distinctio. Similique repellat nulla, neque dolore est cum soluta optio ea perferendis. Delectus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde tempora nesciunt odit, vero esse quas rerum laborum facere commodi maiores eaque libero architecto, nisi temporibus voluptas labore voluptate dolore!
+    </div>
+</body>
+</html>
