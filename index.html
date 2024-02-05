@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>026_Teerapsu_Web_Programming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <style>
     .main{
@@ -12,14 +15,11 @@
         text-align: center;
         margin: 0 auto;
         padding: 100px;
+        
     }    
     .body {
         
-        background-color: #dc96ff; 
-    }
-    img {
-        display: block;
-        margin: auto;
+        background-color: #000000; 
     }
     h1 {
         margin-top: 50px; 
@@ -30,55 +30,151 @@
     h2 {
         font-size: 30px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    th, td {
-        padding: 10px;
-        text-align: left;
-        margin: auto;
-    }
-    table{
-        margin: auto;
-    }
-    li{
-        font-size: 30px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    
-</style>
+    }.container-fluid {
+            background-color: rgb(255, 255, 255);
+        }.btn-myBtn {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }.bi-pc-display-horizontal, .bi-phone-fill, .bi-shop-window {
+            width: 300px ;
+            font-size: 80px;
+            color: rgb(48, 48, 48);
+        }.iconStyle {
+           size: 300px;
+           width: 50px height 50px"
+        }body {
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+    </style>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">TD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
 <body>
     
-    
- 
-    
-
     <h1>
             <p style="color:rgb(0, 0, 0);"> Teerapsu Dumsuwan Web Programming</p>
     </h1>
-
-    <h2> งานในคาบ </h2>
-    <ul>
-        <li><a href="Week/Week3LinkandForm/Week3_link.html">Week3_Link_Form</a></li>
-        <br>
-        <li> </li>
-    </ul>
-
-    <h2> การบ้าน </h2>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-6 ">
+                <h1>I'm am TEERAPUS.</h1>
+                <h2>Welcome to Wed ME</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum vel iusto, itaque, ullam esse voluptates animi eveniet sint illum velit eligendi iure quae voluptate id ad earum reprehenderit doloribus!
+                Numquam incidunt enim quasi sapiente natus fuga! Esse quos labore harum laboriosam praesentium, dicta nisi ut possimus magnam quis. Aperiam voluptate eaque ut quos at perferendis fugit debitis iusto. Eius!
+                Rem dolorum perferendis delectus minus dicta, accusamus, mollitia qui doloremque eum adipisci illum ipsa nesciunt consequuntur a? Laborum ullam, velit veritatis impedit odio error, eaque quibusdam hic, ab aspernatur animi.
+                Minus ut incidunt omnis sint qui hic placeat delectus distinctio repudiandae sapiente ea, aliquam illo beatae sequi fuga. Et quas molestias, tempora voluptas culpa delectus dolore minus quod ad tenetur!</p>
+                <button type="button" class="btn-myBtn">Get to know me</button>
+                
+            </div>
+            <div class="col-6 d-flex  justify-content-center">
+                <img src="https://scontent-kul2-1.xx.fbcdn.net/v/t39.30808-6/297291611_1233290260777498_5274194528002746923_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeF3KBkFAfcqdPSFvmjpyfn91Ih1I8UCrXTUiHUjxQKtdJphv-ivNKb54Sgq3DvxhqDsFHJBhC-uhT3eclXtC5_C&_nc_ohc=xEdQrBxDwpEAX_gBJ4G&_nc_ht=scontent-kul2-1.xx&oh=00_AfCT-9GzLZ-Wz7eCQS14dz5U2TEcFsmGQRLnKLmSH08yUA&oe=65C5217C" class="img-fluid img-size" alt="proflie picture" width="500px">
+            </div>
+        </div>
     
-    <ul>
-        <br>
-        <li> <a href="https://www.canva.com/design/DAF1QXmxDho/J9CPDLJ9tqJ9zQnxIdyt2Q/edit">Active Learning 1: How Websites Work 👯‍♀️</a></li>
-        <br>
-        <li> <a href="Active/wedfood/wedfood.html"> Active Learning 2 : Basic HTML 🍕</a></li>
-        <br>
-        <li><a href="Active/Form/Form.html">Active Learning 3: Form 🧑‍🎓</a></li>
-        <br>
-        <li></li>
-        <br>
-        <li></li>
-        <br>
-        <li></li>
-    </ul>
+    </div>
+    <br>
+    <br>
 
+    <div class="container">
+
+
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="text-center m-5 has"> HOME WORK</h2>
+        <br>
+        <br>
+        <div class="row mb-5 mx-5"> 
+            <div class="col">
+                <img src="https://blogs.consentplace.com/en/wp-content/uploads/2023/10/undraw_undraw_team_effort_7w2e_bb6b.png" class="img-thumbnail imf border-0" alt="Data science" width="300px">
+               <p></p>
+                <h3><a href="https://www.canva.com/design/DAF1QXmxDho/J9CPDLJ9tqJ9zQnxIdyt2Q/edit">Active Learning 1: How Websites Work 👯‍♀️</a></li></h3>
+                
+            </div>
+            <div class="col">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFEvLouC966We3AdEfFAJZYpGhhiYDh1kHZ9_XD9CCAaKsg0st" width="300px">
+                <p></p>
+                <h3><a href="Active/wedfood/wedfood.html"> Active Learning 2 : Basic HTML 🍕</a></li></h3>
+                
+            </div>
+            
+            <div class="col">
+                <img src="https://www.cyberriskevaluator.com/images/auth/signup.svg"  width="300px">
+                <p></p>
+                <h3><a href="Active/Form/Form.html">Active Learning 3: Form 🧑‍🎓</a></h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  
+
+    <div>
+        <h2 class="text-center m-5 has"> WORK </h2>
+        <div class="col">
+            <ul>
+                <li><h3><a href="Week/Week3LinkandForm/Week3_link.html">Week3_Link_Form</a></li></h3></li>
+                <li></li>
+            </ul>
+            
+        </div>
+    </div>
+
+  
+    
+    
+    
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2022 Company, Inc</p>
+        </footer>
+      </div>
+
+      
 </body>
+
 </html>

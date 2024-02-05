@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript </h1>
+    <script>
+        let name = 'Teerapus';
+        
+        c = confirm('Are you sure ?');
+        if(c){ 
+            document.write("Hello"  +  name)
+        }else{
+            document.write("Goodbye " +  name)
+        }
+    </script>
+
+    <script>
+        function checkPositiveNegative(x, y) {
+    if (x > 0 && y < 0) {
+        console.log("One integer is positive, and the other one is negative.");
+    } else if (x < 0 && y > 0) {
+        console.log("One integer is negative, and the other one is positive.");
+    } else {
+        console.log("Both integers have the same sign or are zero.");
+    }
+}
+
+
+let integer1 = 3;
+let integer2 = -5;
+checkPositiveNegative(integer1, integer2);
+
+    </script>
+    
+</body>
+</html>
