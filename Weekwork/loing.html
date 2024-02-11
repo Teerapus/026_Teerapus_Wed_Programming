@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      form {
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+
+      .error {
+        color: red;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WElCOME</h1>
+
+    <form action="">
+      <p>Username :</p>
+      <input type="text" id="username" />
+      <p id="errorUsername" class="error"></p>
+      <p>Password :</p>
+      <input type="password" id="password" />
+      <p id="errorPassword" class="error"></p>
+      <input type="submit" value="OK" />
+    </form>
+  </body>
+  
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").onsubmit = function (event) {
+          let username = document.querySelector("#username").value;
+          let password = document.querySelector("#password").value;
+          let checkusername = username.length >= 8;
+          if (!checkusername) {
+            document.querySelector("#errorUsername").innerHTML =
+              "Username ชื่อผู้ใช้ต้องมีความยาวอย่างน้อย 8 ตัวอักษร ";
+          } else {
+            document.querySelector("#errorUsername").innerHTML = "";
+          }
+          let checkpassword = password.length >= 8;
+          if (!checkpassword) {
+            document.querySelector("#errorPassword").innerHTML =
+              "Password รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร";
+          } else {
+            document.querySelector("#errorPassword").innerHTML = "";
+          }
+          if (!checkusername || !checkpassword) {
+            event.preventDefault(); 
+          }
+        };
+        document.querySelector("#clickme").onclick = function () {
+          document.querySelector("h1").innerHTML = "Good Bye";
+        };
+      });
+    </script>
+</html>
