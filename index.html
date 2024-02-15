@@ -1,180 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>026_Teerapsu_Web_Programming</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <script src="assets/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap">
+  
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <title>หน้าหลัก</title>
 </head>
 <style>
-    .main{
-        border:3px double;
-        width: 1000px;
-        text-align: center;
-        margin: 0 auto;
-        padding: 100px;
-        
-    }    
-    .body {
-        
-        background-color: #000000; 
-    }
-    h1 {
-        margin-top: 50px; 
-        text-align: center;
-        font-size: 50px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    h2 {
-        font-size: 30px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }.container-fluid {
-            background-color: rgb(255, 255, 255);
-        }.btn-myBtn {
-            background-color: #ffffff;
-            color: rgb(0, 0, 0);
-        }.bi-pc-display-horizontal, .bi-phone-fill, .bi-shop-window {
-            width: 300px ;
-            font-size: 80px;
-            color: rgb(48, 48, 48);
-        }.iconStyle {
-           size: 300px;
-           width: 50px height 50px"
-        }body {
-           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        
-    </style>
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    color: aliceblue;
+    background-size: 100%;
+    background-image: url(https://i.pinimg.com/originals/5d/86/cf/5d86cf99d6e0fc96844a6afaea28d7b1.gif);
+    font-family: 'Kanit', sans-serif;
+  }p1{
+    font-size: 29px;
+  }.nav-link{
+    font-size: 17px;
+  }.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+  }section3{
+    text-align: center;
+  }.box {
+    width: 500px;
+    border: 10px solid gray;
+    padding: 10px;
+    margin: 0;
+    background: linear-gradient(to right, var(--width-color), white);
+  }.modal-body{
+    font-size: 25px;
+  }.modal-title{
+    font-size: 30px;
+    font-weight: bold;
+  }.card-title{
+    font-size: 30px;
+    font-weight: bold;
+  }.card-text{
+    font-size: 20px;
+  }
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">TD</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+</style>
 
 <body>
-    
-    <h1>
-            <p style="color:rgb(0, 0, 0);"> Teerapsu Dumsuwan Web Programming</p>
-    </h1>
-    <div class="container">
-        <div class="row pt-5">
-            <div class="col-6 ">
-                <h1>I'm am TEERAPUS.</h1>
-                <h2>Welcome to Wed ME</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum vel iusto, itaque, ullam esse voluptates animi eveniet sint illum velit eligendi iure quae voluptate id ad earum reprehenderit doloribus!
-                Numquam incidunt enim quasi sapiente natus fuga! Esse quos labore harum laboriosam praesentium, dicta nisi ut possimus magnam quis. Aperiam voluptate eaque ut quos at perferendis fugit debitis iusto. Eius!
-                Rem dolorum perferendis delectus minus dicta, accusamus, mollitia qui doloremque eum adipisci illum ipsa nesciunt consequuntur a? Laborum ullam, velit veritatis impedit odio error, eaque quibusdam hic, ab aspernatur animi.
-                Minus ut incidunt omnis sint qui hic placeat delectus distinctio repudiandae sapiente ea, aliquam illo beatae sequi fuga. Et quas molestias, tempora voluptas culpa delectus dolore minus quod ad tenetur!</p>
-                <button type="button" class="btn-myBtn">Get to know me</button>
-                
-            </div>
-            <div class="col-6 d-flex  justify-content-center">
-                <img src="https://scontent-kul2-1.xx.fbcdn.net/v/t39.30808-6/297291611_1233290260777498_5274194528002746923_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeF3KBkFAfcqdPSFvmjpyfn91Ih1I8UCrXTUiHUjxQKtdJphv-ivNKb54Sgq3DvxhqDsFHJBhC-uhT3eclXtC5_C&_nc_ohc=xEdQrBxDwpEAX_gBJ4G&_nc_ht=scontent-kul2-1.xx&oh=00_AfCT-9GzLZ-Wz7eCQS14dz5U2TEcFsmGQRLnKLmSH08yUA&oe=65C5217C" class="img-fluid img-size" alt="proflie picture" width="500px">
-            </div>
-        </div>
-    
-    </div>
-    <br>
-    <br>
 
-    <div class="container">
-
-
-    </div>
-
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg " style="background-color: #070F2B;">
     <div class="container-fluid">
-        <h2 class="text-center m-5 has"> HOME WORK</h2>
-        <br>
-        <br>
-        <div class="row mb-5 mx-5"> 
-            <div class="col">
-                <img src="https://blogs.consentplace.com/en/wp-content/uploads/2023/10/undraw_undraw_team_effort_7w2e_bb6b.png" class="img-thumbnail imf border-0" alt="Data science" width="300px">
-               <p></p>
-                <h3><a href="https://www.canva.com/design/DAF1QXmxDho/J9CPDLJ9tqJ9zQnxIdyt2Q/edit">Active Learning 1: How Websites Work 👯‍♀️</a></li></h3>
-                
-            </div>
-            <div class="col">
-                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFEvLouC966We3AdEfFAJZYpGhhiYDh1kHZ9_XD9CCAaKsg0st" width="300px">
-                <p></p>
-                <h3><a href="Active/wedfood/wedfood.html"> Active Learning 2 : Basic HTML 🍕</a></li></h3>
-                
-            </div>
-            
-            <div class="col">
-                <img src="https://www.cyberriskevaluator.com/images/auth/signup.svg"  width="300px">
-                <p></p>
-                <h3><a href="Active/Form/Form.html">Active Learning 3: Form 🧑‍🎓</a></h3>
-            </div>
-        </div>
+      <a class="navbar-brand" href="#section1" style="color: aliceblue;" >หน้าหลัก</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#section2" style="color: aliceblue;">สิ่งทีไ่ด้เรียนรู้ในรายวิชา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3" style="color: aliceblue;">การบ้าน</a>
+          </li>
+          
+        </ul>
+        
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-  
+  </nav>
+  <!-- navbar -->
 
-    <div>
-        <h2 class="text-center m-5 has"> WORK </h2>
-        <div class="col">
-            <ul>
-                <li><h3><a href="Week/Week3LinkandForm/Week3_link.html">Week3_Link_Form</a></li></h3></li>
-                <li></li>
-            </ul>
-            
-        </div>
+  <div class="container">
+  
+    <br>
+    <div class="d-flex justify-content-center mt-5">
+      <img src="./RUM/wed.png" class="img-fluid" alt="Responsive image"class="card-img-top"  style="border-radius: 10px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);"  >
+
     </div>
+    
 
-  
-    
-    
-    
-    <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2022 Company, Inc</p>
-        </footer>
+    <div class="row pt-5 mt-5">
+      <div class="col-6 ">
+        <p class="text-center"> <h1>สวัสดีเเละยินดีตอนรับ</h1></p>
+        <br>
+        <div class="box">
+          <p1> เว็บไซต์นี้เป็นเว็บสะสมผลงานออกแบบและพัฒนาเว็บสะสมผลงานวิชา Web Programming 
+            รวบรวมความรู้ ผลงานแบบฝึกหัด และโครงงานในรายวิชา 934-206 เเละสิ่งที่ได้เรียนรู้อะไรจากรายวิชานี้</p>
+        </div>
+        
+        <br>
+        <button type="button" class="btn btn-success" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;" data-bs-toggle="modal" data-bs-target="#Profile">ข้อมูลส่วนตัวเพิ่มเติม</button>
+
+      </div>
+      <div class="col-6 d-flex  justify-content-center">
+        <!-- <img
+          src=" https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/344733977_1004592413859281_531660819162656373_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEehW7G3Fz9zBST9eLkloMd4MExLs8XBD_gwTEuzxcEPzki03OU4a1ukJRfHoyW-eig1H2SC0JF5t-w3gH38ear&_nc_ohc=zUHxvaiIFo8AX9jcSuD&_nc_ht=scontent.fbkk5-5.fna&oh=00_AfDldcj0Fl28oRWV8fHy6FDWjMOpj2rHflC89Bw5ixXC7w&oe=65D085EF"
+          class="img-fluid img-size" alt="proflie picture" width="500px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);"> -->
+
+        <div class="" style="width: 18rem;">
+          <img
+            src="https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/344733977_1004592413859281_531660819162656373_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEehW7G3Fz9zBST9eLkloMd4MExLs8XBD_gwTEuzxcEPzki03OU4a1ukJRfHoyW-eig1H2SC0JF5t-w3gH38ear&_nc_ohc=zUHxvaiIFo8AX9jcSuD&_nc_ht=scontent.fbkk5-5.fna&oh=00_AfDldcj0Fl28oRWV8fHy6FDWjMOpj2rHflC89Bw5ixXC7w&oe=65D085EF"
+            class="img-fluid img-size" alt="proflie picture" width="500px"
+            style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+          <div class="card-body">
+            <h5 class="card-title mt-2 " style="text-align: center;" >ข้อมูลผู้สร้าง</h5>
+            <p class="card-text mt-2 " style="text-align: center;">TEERAPUS DUMSUWAN</p>
+            <p class="card-text mt-2 " style="text-align: center;">Prince of Songkla University Surat</p>
+
+
+          </div>
+        </div>
       </div>
 
+    </div>
+
+    <div class="d-flex justify-content-center mt-5">
+      <h1 id="section2"> สิ่งทีไ่ด้เรียนรู้ในรายวิชา </h1>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5 ms-5">
+
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="https://1.bp.blogspot.com/-YVfiFTRW2no/WomFJ3_MuuI/AAAAAAAACHc/0xfUg7CyttI-O64YBrbZcpVJeeIMT0gsACLcBGAs/s1600/HTML5LOGOMaker-Icon-Sample.gif" class="card-img-top" alt=""
+          width="100px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+        <div class="card-body" style="text-align: center;">
+          <button type="button" class="btn btn-success" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;" data-bs-toggle="modal" data-bs-target="#exampleModal"> ความรู้ HTML</button>
+        </div>
+      </div>
+
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="./RUM/css.gif" class="card-img-top" alt=""
+          width="100px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+        <div class="card-body"  style="text-align: center;">
+          <button type="button" class="btn btn-success" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;"  data-bs-toggle="modal" data-bs-target="#css"> ความรู้ CSS</button>
+        </div>
+      </div>
+
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="https://media0.giphy.com/media/SvFocn0wNMx0iv2rYz/giphy.gif?cid=790b7611lxwxecvg4uy2zkpv2b438tt7wose0j7a9ljhyw2x&ep=v1_gifs_search&rid=giphy.gif&ct=g" class="card-img-top" alt=""
+          width="100px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+          <div class="card-body"  style="text-align: center;">
+            <button type="button" class="btn btn-success" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;" data-bs-toggle="modal" data-bs-target="#JS"> ความรู้ JS</button>
+          </div>
+      </div>
+
+  <!-- Modal Profile -->
+  <div class="modal fade" id="Profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">ข้อมูลส่วนตัว</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body">
+          <p style="color:black;"> บ้านเกิด พังาา
+            <br>
+          <br>สิ่งที่ถนัดในด้าน IT
+          <br>- การออกเเบบเว็บเเละหน้า UX UI 
+        <br>- การวาดรูปเเละอินโฟกราฟิกต่าง
+        <br>- ตัดต่อคลิปเเละวิดิโอต่างๆ
+        <br>
+        <br>สิ่งที่ชอบ
+        
+        <br>- การเล่นเกม
+        <br>- เเบดมิดตัน
+      <br></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+      <!-- Modal html -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="color:black;">ข้อมูลความรู้ HTML ที่ได้รับ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p style="color:black;">สิ่งที่ผมได้จาก ภาษา HTML (Hyper Text Markup Language) เป็นภาษาที่ใช้ในการเขียนโปรแกรมข้อมูล
+                ที่ใช้แสดงผลบนเครือข่ายอินเตอร์เน็ตในลักษณะของข้อความ รูปภาพ เสียง และภาพเคลื่อนไหว
+                ต่างๆ ภาษา HTML เป็นภาษาที่ง่ายต่อการเรียนรู้ สามารถก าหนดรูปแบบและโครงสร้างได้ง่าย ท าให้
+                ได้รับความนิยม และมีการพัฒนาอย่างต่อเนื่องเพื่อให้ใช้งานง่ายขึ้น และตอบสนองต่องานด้านกราฟิก
+                มากยิ่งขึ้น และสนับสนุนการแสดงผลในเว็บบราวเซอร์มากมาย และบันทึกในรูปของไฟล์นามสกุล
+                htm หรือ html </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal css -->
+      <div class="modal fade" id="css" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="color:black;">ข้อมูลความรู้ CSS ที่ได้รับ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p style="color:black;">สิ่งที่ได้เรียนมาในเรื่อง css CSS คืออะไร
+
+                CSS คือ ภาษาที่ใช้สำหรับตกแต่งเอกสาร HTML/XHTML ให้มีหน้าตา สีสัน ระยะห่าง พื้นหลัง เส้นขอบและอื่นๆ ตามที่ต้องการ CSS ย่อมาจาก Cascading Style Sheets มีลักษณะเป็นภาษาที่มีรูปแบบในการเขียน Syntax 
+                แบบเฉพาะและได้ถูกกำหนดมาตรฐานโดย W3C เป็นภาษาหนึ่งในการตกแต่งเว็บไซต์ ได้รับความนิยมอย่างแพร่หลาย ถ้าให้เปลี่ยน html คือ บ้านไม้ ถ้าใส่ css บ้านก็จะกลายเป็นบ้านปูนมีของตกเเต่งมากมาย</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal JS -->
+      <div class="modal fade" id="JS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="color:black;">ข้อมูลความรู้ JS ที่ได้รับ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p style="color:black;"> สิ่งที่ได้จาก JS JavaScript เป็นภาษาโปรแกรมที่นักพัฒนาใช้ในการสร้างหน้าเว็บแบบอินเทอร์แอคทีฟ 
+                ตั้งแต่การรีเฟรชฟีดสื่อโซเชียลไปจนถึงการแสดงภาพเคลื่อนไหวและแผนที่แบบอินเทอร์แอคทีฟ ฟังก์ชันของ JavaScript 
+                สามารถปรับปรุงประสบการณ์ที่ผู้ใช้จะได้รับจากการใช้งานเว็บไซต์ และในฐานะที่เป็นภาษาในการเขียนสคริปต์ฝั่งไคลเอ็นต์ 
+                จึงเป็นหนึ่งในเทคโนโลยีหลักของ World Wide Web ยกตัวอย่างเช่น เมื่อคุณท่องเว็บแล้วเห็นภาพสไลด์ 
+                เมนูดร็อปดาวน์แบบคลิกให้แสดงผล หรือสีองค์ประกอบที่เปลี่ยนแบบไดนามิกบนหน้าเว็บ นั่นคือคุณเห็นเอฟเฟกต์ของ JavaScript
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<br>
+<br>
+<br>
+    <div class="d-flex justify-content-center mt-5">
+
       
+      <h1 id="section3">การบ้านที่ได้รับมอบหมาย </h1>
+      
+    </div>
+
+    <div class="d-flex justify-content-center mt-5 ms-5">
+
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="./assets/images/การบ้าน 1.png" class="card-img-top" alt=""width="100px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+        <div class="card-body" style="text-align: center;">
+          
+          
+          <a href="./Active/wedfood/wedfood.html" style="text-decoration: none;">
+            <button type="button" class="btn btn-secondary ms-2" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+              box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;">
+              ทำเมนูอาหาร
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="./assets/images/การบ้าน 2.png" class="card-img-top" alt=""
+          width="100px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+        <div class="card-body"  style="text-align: center;">
+         
+          <a href="./Weekwork/inclass_box_model.html" style="text-decoration: none;">
+            <button type="button" class="btn btn-secondary ms-2" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+              box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;">
+              ANALOG
+            </button>
+          </a>
+        
+        </div>
+      </div>
+
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="./assets/images/การบ้าน 3.png" class="card-img-top" alt=""
+          width="100px" height="220px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+          <div class="card-body"  style="text-align: center;">
+            
+              
+              <a href="./Active/Form/Form.html" style="text-decoration: none;">
+                <button type="button" class="btn btn-secondary ms-2" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+                  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;">
+                  เเบบฟอร์มกรอกศิลเก่า
+                </button>
+              </a>
+          </div>
+      </div>
+      
+      
+      <!-- Modal html -->
+      <div class="modal fade" id="ex1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="color:black;">การบ้านที่ 1</h5>
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p style="color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum vel iusto, itaque, ullam esse
+                voluptates animi eveniet sint illum velit eligendi iure quae voluptate id ad earum reprehenderit
+                doloribus!
+                Numquam incidunt enim quasi sapiente natus fuga! Esse quos labore harum laboriosam praesentium, dicta nisi
+                ut possimus magnam quis. Aperiam voluptate eaque ut quos at perferendis fugit debitis iusto. Eius!
+                Rem dolorum perferendis delectus minus dicta, accusamus, mollitia qui doloremque eum adipisci illum ipsa
+                nesciunt consequuntur a? Laborum ullam, velit veritatis impedit odio error, eaque quibusdam hic, ab
+                aspernatur animi.
+                Minus ut incidunt omnis sint qui hic placeat delectus distinctio repudiandae sapiente ea, aliquam illo
+                beatae sequi fuga. Et quas molestias, tempora voluptas culpa delectus dolore minus quod ad tenetur!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal css -->
+      <div class="modal fade" id="css" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="color:black;">ข้อมูลความรู้ CSS ที่ได้รับ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p style="color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum vel iusto, itaque, ullam esse
+                voluptates animi eveniet sint illum velit eligendi iure quae voluptate id ad earum reprehenderit
+                doloribus!
+                Numquam incidunt enim quasi sapiente natus fuga! Esse quos labore harum laboriosam praesentium, dicta nisi
+                ut possimus magnam quis. Aperiam voluptate eaque ut quos at perferendis fugit debitis iusto. Eius!
+                Rem dolorum perferendis delectus minus dicta, accusamus, mollitia qui doloremque eum adipisci illum ipsa
+                nesciunt consequuntur a? Laborum ullam, velit veritatis impedit odio error, eaque quibusdam hic, ab
+                aspernatur animi.
+                Minus ut incidunt omnis sint qui hic placeat delectus distinctio repudiandae sapiente ea, aliquam illo
+                beatae sequi fuga. Et quas molestias, tempora voluptas culpa delectus dolore minus quod ad tenetur!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal JS -->
+      <div class="modal fade" id="JS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="color:black;">ข้อมูลความรู้ JS ที่ได้รับ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p style="color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid harum vel iusto, itaque, ullam esse
+                voluptates animi eveniet sint illum velit eligendi iure quae voluptate id ad earum reprehenderit
+                doloribus!
+                Numquam incidunt enim quasi sapiente natus fuga! Esse quos labore harum laboriosam praesentium, dicta nisi
+                ut possimus magnam quis. Aperiam voluptate eaque ut quos at perferendis fugit debitis iusto. Eius!
+                Rem dolorum perferendis delectus minus dicta, accusamus, mollitia qui doloremque eum adipisci illum ipsa
+                nesciunt consequuntur a? Laborum ullam, velit veritatis impedit odio error, eaque quibusdam hic, ab
+                aspernatur animi.
+                Minus ut incidunt omnis sint qui hic placeat delectus distinctio repudiandae sapiente ea, aliquam illo
+                beatae sequi fuga. Et quas molestias, tempora voluptas culpa delectus dolore minus quod ad tenetur!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- การบ้านส่วนที่ 2 -->
+    <div class="d-flex justify-content-center mt-5 ms-5"> 
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="./assets/images/การบ้าน 4.png" class="card-img-top" alt=""
+          width="100px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+          <div class="card-body"  style="text-align: center;">
+            
+              <a href="./Weekwork/loing.html" style="text-decoration: none;">
+                <button type="button" class="btn btn-secondary ms-2" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+                  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;">
+                  LOGIN
+                </button>
+              </a>
+              
+          </div>
+      </div>
+
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="./assets/images/การบ้าน 5.png" class="card-img-top" alt=""
+          width="100px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+        <div class="card-body" style="text-align: center;">
+          
+          <a href="./Weekwork/bootstrap.html" style="text-decoration: none;">
+            <button type="button" class="btn btn-secondary ms-2" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+              box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;">
+              ข้อมูลส่วนตัว
+            </button>
+          </a>
+        
+        </div>
+      </div>
+      
+      
+      <div class=" ms-5" style="width: 18rem;">
+        <img src="./assets/images/การบ้าน 6.png" class="card-img-top" alt=""
+          width="100px" height="220px" style="border-radius: 20px;  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);">
+        <div class="card-body" style="text-align: center;">
+          
+          <a href="./Weekwork/peagLayout.html" style="text-decoration: none;">
+            <button type="button" class="btn btn-secondary ms-2" style="background-color: #535C91; border: 2px solid #535C91; border-radius: 10px; 
+              box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); max-width: 100%;">
+              PeagLayout
+            </button>
+          </a>
+          
+      </div>
+
+    </div>
+  </div>
+
+<br>
+<br> 
+<br>
+<br>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <br>
+    <br>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <br>
+      <li class="nav-item"><a href="https://www.youtube.com/channel/UCADMlgbYP9ZsXXNfBuIzWqw" class="nav-link px-2 text-body-secondary"><button type="button" class="btn btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+</svg>
+      </button></a></li>
+      <li class="nav-item"><a href="https://www.tiktok.com/@skyred_09?is_from_webapp=1&sender_device=pc" class="nav-link px-2 text-body-secondary"><button type="button" class="btn btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+<path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+</svg>
+      </button></a></li>
+      <li class="nav-item"><a href="https://www.facebook.com/skyred.damsuwan" class="nav-link px-2 text-body-secondary"><button type="button" class="btn btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+</svg>
+      </button></a></li>
+      <li class="nav-item"><a href="https://github.com/Teerapus" class="nav-link px-2 text-body-secondary"><button type="button" class="btn btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+</svg>
+      </button></a></li>
+      <li class="nav-item"><a href="https://www.instagram.com/skyred_vip/?next=%2F" class="nav-link px-2 text-body-secondary"><button type="button" class="btn btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+</svg>
+      </button></a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+  </footer>
+</div>
+
+
 </body>
 
 </html>
